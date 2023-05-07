@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <!--    <style>-->
+    <!--        body {-->
+    <!--            display: flex;-->
+    <!--            justify-content: center;-->
+    <!--            align-items: center;-->
+    <!--            height: 100vh;-->
+    <!--            margin: 0;-->
+    <!--        }-->
+    <!--        .container {-->
+    <!--            text-align: center;-->
+    <!--        }-->
+    <!--    </style>-->
+    <title>My main page</title>
+</head>
+<body>
+<div id = "container">
+    <header><h1> Boards and Commissions Information Center </h1></header> <!-- what is this for heading -->
+    <nav>
+        <!-- end of naviation -->
+        <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="index2.html">About</a></li>
+            <li><a href="index3.html">Nothing to say</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+
+
+    <!-- end of the main class -->
+    <footer>&copy; copy right 2023</footer>
+</div>
+
+</body>
+</html>
