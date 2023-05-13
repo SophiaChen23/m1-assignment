@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@500&display=swap');
+
+
+header {
+    background: url(images/universe.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family:  'Wix Madefor Text', Arial, Helvetica, sans-serif;
+    color: rgb(143, 188, 143);
+    text-align: center;
+    font-size: 39px;
+}
+
+nav{
+    background-color: rgb(135,206,250);
+    height:100px;
+    text-align: center;
+    padding-top: 2px;
+
+}
+main {
+    /*display: flex;*/
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+/*main > * {*/
+/*    margin: 0 10px; !* Adjust the margin as per your preference *!*/
+/*}*/
+
+/*body {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*    text-align: center;*/
+/*}*/
+
+
+/*main {*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*    font-size: 14px;*/
+/*    color: black;*/
+/*}*/
+
+/*main p:first-child {*/
+/*    color: blue;*/
+/*}*/
+
+/*main p:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+
+
+
+
+
+
+
