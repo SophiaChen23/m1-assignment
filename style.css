@@ -7,6 +7,9 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
+    margin-top: 350px; /* Add margin to create space above */
+    background-color: powderblue;
+    width: 100%;
 
 }
 
@@ -16,13 +19,14 @@ header {
     background-position: center;
     height: 400px;
 
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     padding-left: 100px;
     font-weight: bold;
     font-family:  'Wix Madefor Text', Arial, Helvetica, sans-serif;
     color: rgb(143, 188, 143);
     text-align: center;
     font-size: 39px;
+    margin-bottom: 20px;
 
 }
 
@@ -33,13 +37,16 @@ nav{
     padding-top: 2px;
 
 }
-main.lol {
-    /*display: flex;*/
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+/*main.lol {*/
+/*    !*display: flex;*!*/
+/*    justify-content: center;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
 
 
+/*}*/
+#lol h2 {
+    background-color: powderblue;
 }
 /*main > * {*/
 /*    margin: 0 10px; !* Adjust the margin as per your preference *!*/
