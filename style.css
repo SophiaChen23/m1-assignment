@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@500&display=swap');
 
-#lol  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    margin-top: 350px; /* Add margin to create space above */
-    background-color: powderblue;
-    width: 100%;
+/*#lol  {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*    text-align: center;*/
+/*    margin-top: 350px; !* Add margin to create space above *!*/
+/*    background-color: powderblue;*/
+/*    width: 100%;*/
 
-}
+/*}*/
 
 header {
     background: url(images/universe.jpg) no-repeat;
@@ -47,6 +47,21 @@ nav{
 /*}*/
 #lol h2 {
     background-color: powderblue;
+}
+main #album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main #album .photo {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+main #album .photo img {
+    width: 100%;
+    height: auto;
 }
 /*main > * {*/
 /*    margin: 0 10px; !* Adjust the margin as per your preference *!*/
