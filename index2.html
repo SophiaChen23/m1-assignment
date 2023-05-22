@@ -5,6 +5,7 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
+<div id = "container">
 
     <header> Boards and Commissions Information Center </header> <!-- what is this for heading -->
     <nav>
@@ -18,24 +19,44 @@
     </nav>
     <main>
 <!--        <div class = "lol">-->
-            <a href="/fullcalendar?search=&amp;department=511">Upcoming Events</a>
+<!--            <a href="/fullcalendar?search=&amp;department=511">Upcoming Events</a>-->
 <!--        </div>-->
             <ul id = "album">
-                      <li id = "photo"><img src = "images/winterland1.jpg"></li>
-                      <li id = "photo"><img src = "images/winterland2.jpg"></li>
-                      <li id = "photo"><img src = "images/winterland3.jpg"></li>
-                      <li id = "photo"><img src = "images/winterland4.jpg"></li>
-                      <li id = "photo"><img src = "images/winterland5.jpg"></li>
-                      <li id = "photo"><img src = "images/winterland6.jpg"></li>
+<!--                      <li id = "photo"><img src = "images/winterland1.jpg"></li>-->
+<!--                      <li id = "photo"><img src = "images/winterland2.jpg"></li>-->
+<!--                      <li id = "photo"><img src = "images/winterland3.jpg"></li>-->
+<!--                      <li id = "photo"><img src = "images/winterland4.jpg"></li>-->
+<!--                      <li id = "photo"><img src = "images/winterland5.jpg"></li>-->
+<!--                      <li id = "photo"><img src = "images/winterland6.jpg"></li>-->
 
             </ul>
-            <footer>&copy; copy right 2023</footer>
 
+        <footer>&copy; copy right 2023</footer>
     </main>
 
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image;
+        var openList = "<li id ='photo'>";
+        var closeList = "</li>";
+
+        for (var i = 0; i < 6; i++) {
+            fileNames.push("winterland" + (i + 1));
+            photos.push("<img src = 'images/" + fileNames[i] + ".jpg'>");
+            image = openList + photos[i] + closeList;
+            imageList.push(image);
+        }
+        // document.getElementById("album").innerHTML = imageList.join(" ");
+        document.getElementById("album").innerHTML = imageList;
+
+    </script>
 
 
 
 
+
+</div>
 </body>
 </html>
