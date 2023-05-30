@@ -77,3 +77,38 @@ main #album .photo img {
     display: block;
     cursor: pointer;
 }
+
+
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #888;
+    text-decoration: none;
+}
+
+.close-button:hover {
+    color: #555;
+}
+
+.info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
