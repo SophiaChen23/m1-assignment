@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <title>My fourth trash page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleContactField() {
+      var contactSelect = document.getElementById("contactSelect");
+      var contactField = document.getElementById("contactField");
+
+      if (contactSelect.value === "email") {
+        contactField.innerHTML = 'Enter your email: <br><input type="email" name="email">';
+      } else if (contactSelect.value === "phone") {
+        contactField.innerHTML = 'Enter your phone: <br> <input type="text" name="phone">';
+      } else {
+        contactField.innerHTML = '';
+      }
+    }
+  </script>
+</head>
+<body>
+<header>Boards and Commissions Information Center</header>
+<nav>
+  <ul>
+    <li><a href="index1.html">Home</a></li>
+    <li><a href="index2.html">About</a></li>
+    <li><a href="index3.html">Nothing to say</a></li>
+    <li><a href="index4.html">Customers form</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="container">
+    <form action="/signup" method="post">
+      <fieldset>
+        <legend>User Personal Information</legend>
+
+        <label for="name">Enter your full name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label>Select how we should contact you:</label><br>
+        <select name="contact" id="contactSelect" onchange="toggleContactField()">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select><br><br>
+
+        <div id="contactField"></div><br>
+
+        <label>Tell us the reason for your visit today:</label><br>
+        <textarea name="reason" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Sign Up">
+      </fieldset>
+    </form>
+  </div>
+</main>
+</body>
+</html>
